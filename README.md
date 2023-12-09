@@ -2,7 +2,7 @@
 
 *I created this project using react hook(useState), conditional rendering, icons.*
 
-[LİVE]()
+[LİVE](https://question-acordion-zlh.vercel.app/)
 
 ## How does my project look 
 ![question](./public/acordion.gif)
@@ -15,8 +15,6 @@
 
 
 
-In the project directory, you can run:
 
-### `npm start` && `npm install`
 
 
