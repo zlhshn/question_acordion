@@ -1,7 +1,7 @@
-
 import "./App.css";
 import InterviewAccord from "./components/InterviewAccord";
 import Header from "./components/Header";
+
 
 const App = () => {
   return (

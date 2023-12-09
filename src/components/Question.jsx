@@ -1,32 +1,30 @@
 import React from "react";
 import { arrowdown, arrowup } from "../helpers/icons";
-import data from "../helpers/data";
 import { useState } from "react";
 
-const Card = () => {
+const Card = (data) => {
+
 
   const [showdata , setShowdata] = useState(false)
- 
 
-
+console.log();
 
   return (
     <div className="card-group">
-      {data.map(({ id, question, answer }) => (
-        <div className="card">
+      {
+        <div key={data.id} className="card">
           <div className="ques-answer">
-            <h5>{question}</h5>
+            <h5>{data.question}</h5>
 
-            <button className="btn-minus" onClick={()=>setShowdata()}>
-              {arrowup} {arrowdown}
+            <button className="btn-minus" onClick={()=>setShowdata(!showdata)} >
+             {showdata ? arrowup:arrowdown }
             </button>
-          </div>{
 
-            setShowdata(!showdata) && (<p>{answer}</p>)
-          }
-          
+            
+          </div>
+          {showdata && <p> {data.answer}</p>}
         </div>
-      ))}
+      }
     </div>
   );
 };
