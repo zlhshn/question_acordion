@@ -1,6 +1,6 @@
 ## Description
 
-*I created this project using react hook(useState), conditional rendering, icons.*
+*I created this project using react hook(useState), conditional rendering.*
 
 [LİVE](https://question-acordion-zlh.vercel.app/)
 
